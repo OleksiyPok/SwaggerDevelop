@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "version": "1.0.1",
+    "title": "Swagger test"
+  },
+  "tags": [
+    {
+      "name": "User",
+      "description": "User profile endpoints"
+    }
+  ],
+  "paths": {
+    "/user/current": {
+      "get": {
+        "tags": ["User"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/user/avatars": {
+      "patch": {
+        "tags": ["User"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/user/": {
+      "patch": {
+        "tags": ["User"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    }
+  }
+}

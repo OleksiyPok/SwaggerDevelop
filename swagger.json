@@ -1,0 +1,190 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "version": "1.0.1",
+    "title": "Water Tracker",
+    "description": "A web application that allows you to track daily water consumption"
+  },
+  "servers": [{ "url": "http://render.com" }],
+  "tags": [
+    {
+      "name": "Auth",
+      "description": "Authorization endpoints"
+    },
+    {
+      "name": "User",
+      "description": "User profile endpoints"
+    },
+    {
+      "name": "WaterRate",
+      "description": "User water norm endpoints"
+    },
+    {
+      "name": "Water",
+      "description": "User water data endpoints"
+    },
+
+    {
+      "name": "WaterToday",
+      "description": "User water today data endpoints"
+    },
+    {
+      "name": "WaterMonth",
+      "description": "User water month data endpoints"
+    }
+  ],
+  "paths": {
+    "/auth/register": {
+      "post": {
+        "tags": ["Auth"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/auth/verify/{verificationToken}": {
+      "post": {
+        "tags": ["Auth"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/auth/verify": {
+      "post": {
+        "tags": ["Auth"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "tags": ["Auth"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/auth/logout": {
+      "post": {
+        "tags": ["Auth"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/user/current": {
+      "get": {
+        "tags": ["User"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/user/avatars": {
+      "patch": {
+        "tags": ["User"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/user": {
+      "patch": {
+        "tags": ["User"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/waterrate": {
+      "patch": {
+        "tags": ["WaterRate"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/water": {
+      "post": {
+        "tags": ["Water"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/water/{waterRecordId}": {
+      "put": {
+        "tags": ["Water"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Water"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/today": {
+      "get": {
+        "tags": ["WaterToday"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/month": {
+      "get": {
+        "tags": ["WaterMonth"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {}
+          }
+        }
+      }
+    }
+  }
+}
