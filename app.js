@@ -11,8 +11,8 @@ app.use(express.json());
 
 // app.use("/api", routes);
 
-app.use("/api-docs", swaggerUi.serve);
-app.get("/api-docs", swaggerUi.setup(swaggerDocument));
+app.use("/api/api-docs", swaggerUi.serve);
+app.get("/api/api-docs", swaggerUi.setup(swaggerDocument));
 
 app.use((_, res) => {
   res.status(404).json({ message: "Route not found" });
